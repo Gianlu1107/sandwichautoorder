@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordina il tuo panino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ordina il tuo panino</h1>
+        <form id="orderForm">
+            <label for="customerName">Nome e Cognome:</label>
+            <input type="text" id="customerName" required>
+
+            <h2>🍕 Pizza (€2.00)</h2>
+            <label><input type="checkbox" name="food" value="2.00"> Margherita</label>
+            <label><input type="checkbox" name="food" value="2.00"> Wurstel</label>
+            <label><input type="checkbox" name="food" value="2.00"> Salsiccia</label>
+            <label><input type="checkbox" name="food" value="2.00"> Prosciutto e Funghi</label>
+
+            <h2>🥪 Panini Classici (€2.00)</h2>
+            <label><input type="checkbox" name="food" value="2.00"> Cotto</label>
+            <label><input type="checkbox" name="food" value="2.00"> Cotto e Formaggio</label>
+            <label><input type="checkbox" name="food" value="2.00"> Crudo</label>
+            <label><input type="checkbox" name="food" value="2.00"> Speck</label>
+            <label><input type="checkbox" name="food" value="2.00"> Porchetta</label>
+            <label><input type="checkbox" name="food" value="2.00"> Mortadella</label>
+            <label><input type="checkbox" name="food" value="2.00"> Tacchino</label>
+            <label><input type="checkbox" name="food" value="2.00"> Pancetta Affumicata</label>
+            <label><input type="checkbox" name="food" value="2.00"> Soppressa</label>
+
+            <h2>🥖 Focacce (€2.00)</h2>
+            <label><input type="checkbox" name="food" value="2.00"> Olive</label>
+            <label><input type="checkbox" name="food" value="2.00"> Pomodorini</label>
+            <label><input type="checkbox" name="food" value="2.00"> Tonno e Olive</label>
+            <label><input type="checkbox" name="food" value="2.00"> Tonno e Cipolline</label>
+
+            <h2>🥪 Panini e Focacce Farcite (€2.50)</h2>
+            <label><input type="checkbox" name="food" value="2.50"> Crudo e Philadelphia</label>
+            <label><input type="checkbox" name="food" value="2.50"> Speck e Salsa Funghi</label>
+            <label><input type="checkbox" name="food" value="2.50"> Porchetta e Salsa Tonno</label>
+            <label><input type="checkbox" name="food" value="2.50"> Tacchino e Salsa Rosa</label>
+            <label><input type="checkbox" name="food" value="2.50"> Mortadella e Salsa Piccante</label>
+            <label><input type="checkbox" name="food" value="2.50"> Soppressa e Salsa Piccante</label>
+            <label><input type="checkbox" name="food" value="2.50"> Cotto, Pomodoro e Salsa Rosa</label>
+            <label><input type="checkbox" name="food" value="2.50"> Pesto, Pancetta Affumicata e Scamorza</label>
+
+            <h2>🍞 Toast (€2.50)</h2>
+            <label><input type="checkbox" name="food" value="2.50"> Cotto e Formaggio</label>
+
+            <h2>🥤 Bibite</h2>
+            <label><input type="checkbox" name="drink" value="1.00" data-discount="0.50"> Acqua (€1.00 / €0.50 con panino)</label>
+            <label><input type="checkbox" name="drink" value="1.50" data-discount="1.00"> Tè (€1.50 / €1.00 con panino)</label>
+			<label><input type="checkbox" name="drink" value="1.50" data-discount="1.00"> Coca Cola (€1.50 / €1.00 con panino)</label>
+            <label><input type="checkbox" name="drink" value="2.00" data-discount="1.50"> RedBull (€2.00 / €1.50 con panino)</label>
+
+            <h2>Totale: €<span id="total">0.00</span></h2>
+
+            <button onclick="inviaOrdine()">Invia Ordine</button>
+
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

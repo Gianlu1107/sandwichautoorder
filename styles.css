@@ -1,0 +1,85 @@
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* Aggiunto spazio per evitare il taglio */
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenitore principale */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    min-height: 80vh; /* Impedisce che il contenitore sia troppo piccolo */
+    overflow-y: auto; /* Permette di scorrere se il contenuto è lungo */
+}
+
+/* Titoli */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Input e checkbox */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Bottone invio */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Totale prezzo */
+#total {
+    font-weight: bold;
+    font-size: 20px;
+    color: #28a745;
+}
+
+/* Adattamento per schermi grandi */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 600px;
+        padding: 30px;
+    }
+}
